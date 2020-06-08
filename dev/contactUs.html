@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('meta.html')
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/joinUs.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header-color">
+            @@include('header.html',{"contact": "active"})
+        </div>
+        <section id="contact-us">
+            <div id="container"></div>
+            <div class="list">
+                <p class="company">上饶市创新创业产业孵化中心</p>
+                <img class="company_code" src="images/index/fuhuaqi_erweima.jpg" alt="二维码">
+                <ul>
+                    <li>
+                        <img src="images/index/lianxi_dianhua.svg">
+                        <p>0793-8165599</p>
+                    </li>
+                    <li>
+                        <img src="images/index/lianxi_youxiang.svg">
+                        <p>316530425@qq.com</p>
+                    </li>
+                    <li>
+                        <img src="images/index/weizhi.svg">
+                        <p>江西省上饶市信州区锦绣路2号 广信大厦A栋二楼</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        @@include('apply.html')
+        @@include('footer.html')
+    </div>
+</body>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=9dd5a55c843428b33d87906d3fdcba3a"></script>
+<script type="text/javascript" src="js/contactUs.js"></script>
+
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>zhiding_d</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-1620.000000, -4202.000000)" fill-rule="nonzero">
+            <g id="Group-20" transform="translate(1620.000000, 4202.000000)">
+                <rect id="zhiding_d" fill="#999999" x="0" y="0" width="60" height="60" rx="4"></rect>
+                <path d="M18.3716326,35.6857143 C17.8916326,35.2057143 17.8687754,34.4057143 18.3487754,33.9257143 L28.7716326,23.5028571 C28.8173469,23.4571429 28.8630611,23.4114286 28.9544897,23.3657143 C29.2059183,23.1142857 29.5259183,23 29.8459183,23 C30.1659183,23 30.5087754,23.1142857 30.760204,23.3657143 L41.320204,33.9257143 C41.800204,34.4057143 41.800204,35.1828571 41.2973469,35.6857143 C40.8173469,36.1657143 40.0173469,36.1885714 39.5373469,35.7085714 L29.8459183,25.9714286 L20.1316326,35.6857143 C19.6516326,36.1657143 18.8516326,36.1657143 18.3716326,35.6857143 Z" id="Path-Copy-5" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

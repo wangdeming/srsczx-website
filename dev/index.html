@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('meta.html')
+
+        <title>上饶市创新创业产业孵化中心</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/swiper.min.css" />
+        <script src="js/index.js"></script>
+        <script src="js/indexSwiper.js"></script>
+        <script src="js/swiper.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper" class="index">
+            @@include('header.html', {"index": "active"})
+            <article class="container">
+                <!-- 新闻动态 -->
+                <div class="news">
+                    <div class="container_nav">
+                        <div class="nav_title">新闻动态</div>
+                        <a class="nav_more" href="./newsInfo.html">
+                            <span class="more">更多</span>
+                            <span class="right_arrow"></span>
+                        </a>
+                    </div>
+                    <div class="news_content">
+                        <div class="swiper" id="news_swiper"></div>
+                        <div class="news_list">
+                            <div class="list_nav">
+                                <div class="list_nav_item active">新闻资讯</div>
+                                <div class="list_nav_item">中心动态</div>
+                                <div class="list_nav_item">重要通知</div>
+                            </div>
+                            <div class="list_news" id="newsList">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--轮播图-->
+                <div class="bigImage" id="bigImage"></div>
+                <!-- 服务体系 -->
+                <div class="service">
+                    <div class="container_nav">
+                        <div class="nav_title">服务体系</div>
+                        <a class="nav_more" href="./serviceSystem.html">
+                            <span class="more">更多</span>
+                            <span class="right_arrow"></span>
+                        </a>
+                    </div>
+                    <div class="service_list">
+                        <div class="service_item">
+                            <img src="images/index/fuwu_chuangyefudao.svg">
+                            <span>创业辅导</span>
+                        </div>
+                        <div class="service_item">
+                            <img src="images/index/fuwu_jiaoliupeixun.svg">
+                            <span>交流培训</span>
+                        </div>
+                        <div class="service_item">
+                            <img src="images/index/fuwu_xiangmutuijie.svg">
+                            <span>项目推介</span>
+                        </div>
+                        <div class="service_item">
+                            <img src="images/index/fuwu_shichangtuiguang.svg">
+                            <span>市场推广</span>
+                        </div>
+                        <div class="service_item">
+                            <img src="images/index/fuwu_rongzitouzi.svg">
+                            <span>融资投资</span>
+                        </div>
+                    </div>
+                    <div class="service_list">
+                        <div class="service_item">
+                            <img src="images/index/fuwu_rencaiyinjin.svg">
+                            <span>人才引进</span>
+                        </div>
+                        <div class="service_item">
+                            <img src="images/index/fuwu_zhuanyefuwu.svg">
+                            <span>专业服务</span>
+                        </div>
+                        <div class="service_item">
+                            <img src="images/index/fuwu_jichusheshi.svg">
+                            <span>基础设施</span>
+                        </div>
+                        <div class="service_item">
+                            <img src="images/index/fuwu_zhishichanquan.svg">
+                            <span>知识产权</span>
+                        </div>
+                        <div class="service_item">
+                            <img src="images/index/fuwu_caiwufalv.svg">
+                            <span>财务法律</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 招商政策 -->
+                <div class="policy">
+                    <div class="container_nav">
+                        <div class="nav_title">招商政策</div>
+                        <a class="nav_more" href="./policy.html">
+                            <span class="more">更多</span>
+                            <span class="right_arrow"></span>
+                        </a>
+                    </div>
+                    <div class="policy_div">
+                        <div class="policy_nav">
+                            <div class="policy_nav_item active">国家级</div>
+                            <div class="policy_nav_item">省级</div>
+                            <div class="policy_nav_item">市级</div>
+                            <div class="policy_nav_item">区县级</div>
+                        </div>
+                        <div class="policy_list" id="policyList">
+                        </div>
+                    </div>
+                </div>
+                <!-- 中心简介 -->
+                <div class="center">
+                    <div class="container_nav">
+                        <div class="nav_title">中心简介</div>
+                        <a class="nav_more" href="./centerIntroduction.html">
+                            <span class="more">更多</span>
+                            <span class="right_arrow"></span>
+                        </a>
+                    </div>
+                    <div class="center_div">
+                        <div class="center_info">
+                            上饶市创新创业产业孵化中心是上饶市政府与中科院云计算中心所签订的共建云计算产业基地重大战略合作协议上的重要项目，是上饶市大数据领域创新、创业企业孵化服务平台，主要面向智慧城市建设领域培育由孵化企业、转化企业、领军企业构成的大数据产业集群，助力上饶市智慧城市建设，其主要使命是用5年左右的时间打造一个国家级孵化器。该平台建设由上饶市中科院云计算中心大数据研究院负责。
+                        </div>
+                        <img class="img1" src="images/index/tongpai_caizheng.jpg">
+                        <img class="img2" src="images/index/tongpai_baozhang.jpg">
+                        <img class="img3" src="images/index/tongpai_jishu.jpg">
+                        <img class="img4" src="images/index/fuhuaqi_zhaopian.jpg">
+                    </div>
+                </div>
+                <!-- 办公环境 -->
+                <div class="office">
+                    <div class="container_nav">
+                        <div class="nav_title">办公环境</div>
+                        <a class="nav_more" href="./centerIntroduction.html">
+                            <span class="more">更多</span>
+                            <span class="right_arrow"></span>
+                        </a>
+                    </div>
+                    <div class="office_container">
+                        <div class="swiper-container clearfix" id="colee_left">
+                            <div class="clearfix" id="colee_box" style="height: 200px;">
+                                <div class="swiper-wrapper fl" id="colee_left1">
+                                    <div class="swiper-slide">
+                                        <a style="cursor: default;">
+                                            <img src="images/index/shuangchuang_pic1.jpg" class="swiper-lazy scalePic" />
+                                            <div class="detail"><span>洽谈桌椅</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a style="cursor: default;">
+                                            <img src="images/index/shuangchuang_pic2.jpg" class="swiper-lazy scalePic" />
+                                            <div class="detail"><span>宣传长廊</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a style="cursor: default;">
+                                            <img src="images/index/shuangchuang_pic3.jpg" class="swiper-lazy scalePic" />
+                                            <div class="detail"><span>阅读室</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a style="cursor: default;">
+                                            <img src="images/index/shuangchuang_pic4.jpg" class="swiper-lazy scalePic" />
+                                            <div class="detail"><span>办公室</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a style="cursor: default;">
+                                            <img src="images/index/shuangchuang_pic5.jpg" class="swiper-lazy scalePic" />
+                                            <div class="detail"><span>洽谈室</span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-wrapper fl" id="colee_left2"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev" id="swiper-button-prev"></div>
+                        <div class="swiper-button-next" id="swiper-button-next"></div>
+                    </div>
+                </div>
+                <!-- 友情链接 -->
+                <div class="friend">
+                    <div class="container_nav">
+                        <div class="nav_title">友情链接</div>
+                    </div>
+                    <div class="friend_div">
+                        <a href="http://www.ccopyright.com.cn" target="_blank" class="friend_item">
+                            <img src="images/index/banquan.png" alt="中国版权保护中心">
+                        </a>
+                        <a href="http://rst.jiangxi.gov.cn" target="_blank" class="friend_item">
+                            <img src="images/index/rensheju.png" alt="江西省人力资源和社会保障厅">
+                        </a>
+                        <a href="http://kjt.jiangxi.gov.cn" target="_blank" class="friend_item" style="background-color: rgb(27,101,179);">
+                            <img src="images/index/kejiting.png" alt="江西省科学技术厅">
+                        </a>
+                        <a href="http://drc.jiangxi.gov.cn" target="_blank" class="friend_item">
+                            <img src="images/index/fagaiwei.png" alt="江西省发展和改革委员会">
+                        </a>
+                        <a href="http://www.jxciit.gov.cn" target="_blank" class="friend_item" style="background-color: rgb(180,19,28);">
+                            <img src="images/index/gongye.png" alt="江西省工业和信息化厅">
+                        </a>
+                        <a href="http://www.zgsr.gov.cn" target="_blank" class="friend_item">
+                            <img src="images/index/renminzhengfu.png" alt="上饶市人民政府">
+                        </a>
+                        <a href="http://www.ibdsr.cn" class="friend_item" target="_blank" style="background-color: rgb(27,101,179);">
+                            <img src="images/index/bigdata.png" alt="上饶市中科院云计算中心大数据研究院">
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 公用返回顶部 -->
+            <div id="goTop"></div>
+
+            @@include('apply.html')
+
+            @@include('footer.html')
+        </div>
+
+        <script>
+            // 图片滚动
+            var speed = 40 //速度数值越大速度越慢
+            var colee_left2 = document.getElementById('colee_left2')
+            var colee_left1 = document.getElementById('colee_left1')
+            var colee_left = document.getElementById('colee_left')
+            var colee_box = document.getElementById('colee_box')
+
+            $('#colee_box').css('width', $('#colee_left1').width() * 2 + 'px')
+
+            var prev = document.getElementById('swiper-button-prev')
+            var next = document.getElementById('swiper-button-next')
+
+            colee_left2.innerHTML = colee_left1.innerHTML
+
+            function Marquee3() {
+                if (colee_left2.offsetWidth - colee_left.scrollLeft <= 0)
+                //offsetWidth 是对象的可见宽度
+                    colee_left.scrollLeft -= colee_left1.offsetWidth
+                //scrollWidth 是对象的实际内容的宽，不包边线宽度
+                else {
+                    colee_left.scrollLeft++
+                }
+            }
+            var MyMar3 = setInterval(Marquee3, speed)
+
+            colee_left.onmouseover = function() {
+                clearInterval(MyMar3)
+            }
+            colee_left.onmouseout = function() {
+                MyMar3 = setInterval(Marquee3, speed)
+            }
+
+            prev.onclick = function() {
+                colee_left.scrollLeft = colee_left.scrollLeft - speed * 10
+            }
+
+            next.onclick = function() {
+                colee_left.scrollLeft = colee_left.scrollLeft + speed * 10
+            }
+        </script>
+    </body>
+</html>

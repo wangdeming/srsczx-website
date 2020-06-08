@@ -1,0 +1,96 @@
+<header class="header">
+  <div class="logo-bg">
+    <div class="container">
+      <a href="./index.html" class="logo"></a>
+    </div>
+  </div>
+  <div class="nav-container">
+    <nav class="nav clearfix">
+      @@if(context.index === "active") {
+      <div class="nav-link active">
+        <a class="" href="./index.html">
+          <span>首页</span>
+        </a>
+      </div>
+      } @@if(context.index !== "active") {
+      <div class="nav-link">
+        <a class="" href="./index.html">
+          <span>首页</span>
+        </a>
+      </div>
+      } @@if(context.news === "active") {
+      <div class="nav-link active">
+        <a class="" href="./newsInfo.html">
+          <span>新闻动态</span>
+        </a>
+      </div>
+      } @@if(context.news !== "active") {
+      <div class="nav-link">
+        <a class="" href="./newsInfo.html">
+          <span>新闻动态</span>
+        </a>
+      </div>
+      } @@if(context.service === "active") {
+      <div class="nav-link active">
+        <a class="" href="./serviceSystem.html">
+          <span>服务体系</span>
+        </a>
+      </div>
+      } @@if(context.service !== "active") {
+      <div class="nav-link">
+        <a class="" href="./serviceSystem.html">
+          <span>服务体系</span>
+        </a>
+      </div>
+      } @@if(context.policy === "active") {
+      <div class="nav-link active">
+        <a class="" href="./policy.html">
+          <span>招商政策</span>
+        </a>
+      </div>
+      } @@if(context.policy !== "active") {
+      <div class="nav-link">
+        <a class="" href="./policy.html">
+          <span>招商政策</span>
+        </a>
+      </div>
+      } @@if(context.center === "active") {
+      <div class="nav-link active">
+        <a class="" href="./centerIntroduction.html">
+          <span>中心简介</span>
+        </a>
+      </div>
+      } @@if(context.center !== "active") {
+      <div class="nav-link">
+        <a class="" href="./centerIntroduction.html">
+          <span>中心简介</span>
+        </a>
+      </div>
+      } @@if(context.rczp === "active") {
+      <div class="nav-link active">
+        <a class="" href="./recruitment.html">
+          <span>人才招聘</span>
+        </a>
+      </div>
+      } @@if(context.rczp !== "active") {
+      <div class="nav-link">
+        <a class="" href="./recruitment.html">
+          <span>人才招聘</span>
+        </a>
+      </div>
+      } @@if(context.contact === "active") {
+      <div class="nav-link active">
+        <a class="" href="./contactUs.html">
+          <span>联系我们</span>
+        </a>
+      </div>
+      } @@if(context.contact !== "active") {
+      <div class="nav-link">
+        <a class="" href="./contactUs.html">
+          <span>联系我们</span>
+        </a>
+      </div>
+      }
+    </nav>
+  </div>
+</header>

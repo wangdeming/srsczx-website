@@ -1,0 +1,170 @@
+.keyframes (@prefix,@name,@content) when (@prefix=def) {
+    @keyframes @name {
+      @content();
+    }
+  }
+  .keyframes (@prefix,@name,@content) when (@prefix=moz) {
+    @-moz-keyframes @name {
+      @content();
+    }
+  }
+  .keyframes (@prefix,@name,@content) when (@prefix=o) {
+    @-o-keyframes @name {
+      @content();
+    }
+  }
+  .keyframes (@prefix,@name,@content) when (@prefix=webkit) {
+    @-webkit-keyframes  @name{
+      @content();
+    }
+  }
+  .keyframes (@prefix,@name,@content) when (@prefix=all) {
+    .keyframes(moz,@name,@content);
+    .keyframes(o,@name,@content);
+    .keyframes(webkit,@name,@content);
+    .keyframes(def,@name,@content);
+  }
+
+.keyframes(all, rotate, {
+    from {
+        transform: rotateZ(0);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+});
+
+.keyframes(all, easeShow, {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 100%;
+    }
+});
+
+.keyframes(all, bright, {
+    0% {
+        filter: brightness(0.8) saturate(1) contrast(1);
+    }
+    50% {
+        filter: brightness(1.6) saturate(1.2) contrast(1.2);
+    }
+    100% {
+        filter: brightness(0.8) saturate(1) contrast(1);
+    }
+});
+
+.keyframes(all, clockwiseFlip, {//顺时针翻转动画
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+});
+
+.keyframes(all, AntiClockwiseFlip, {//逆时针翻转动画
+    from {
+        transform: rotateY(-180deg);
+    }
+    to {
+        transform: rotateY(0);
+    }
+});
+
+.keyframes(all, expand, {//膨胀动画
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+});
+
+
+.keyframes(all, ballScale, {//渐进动画
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+});
+
+.keyframes(all, fly1, {//飞入动画
+    0% {
+        transform: translate3d(0, 0, 0) scale(0);
+    }
+    100% {
+        transform: translate3d(170px, 142px, 0) scale(1.5);
+    }
+});
+.keyframes(all, fly2, {//飞入动画
+    0% {
+        transform: translate3d(0, 0, 0) scale(0);
+    }
+    100% {
+        transform: translate3d(-215px, 30px, 0) scale(1.5);
+    }
+});
+.keyframes(all, fly3, {//飞入动画
+    0% {
+        transform: translate3d(0, 0, 0) scale(0);
+    }
+    100% {
+        transform: translate3d(0, -210px, 0) scale(1.5);
+    }
+});
+
+.keyframes(all, cloud1, {//云朵动画
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 5000% 0;
+    }
+});
+.keyframes(all, cloud2, {//云朵动画
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 20000% 0;
+    }
+});
+.keyframes(all, wave, { //波浪运动
+    0% {
+        background-position: -10px;
+        transform: translateY(5px)
+    }
+    20% {
+        background-position: -20px;
+        transform: translateY(10px)
+    }
+    40% {
+        background-position: -10px;
+        transform: translateY(5px)
+    }
+    50% {
+        background-position: 0;
+        transform: translateY(0)
+    }
+    60%{
+        background-position: -10px;
+        transform: translateY(5px)
+    }
+    80% {
+        background-position: -20px;
+        transform: translateY(10px)
+    }
+    100% {
+        background-position: -10px;
+        transform: translateY(5px)
+    }
+});

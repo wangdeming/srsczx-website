@@ -1,0 +1,140 @@
+<!-- 组织架构表，废了用图片 -->
+<div class="echat">
+    <div class="item">
+        <span class="cell-item line"><p>理事会</p></span>
+    </div>
+    <div class="item">
+        <span class="cell-item spe1"><p>专家委员会</p></span>
+    </div>
+    <div class="item">
+        <span class="cell-item helf-line"><p>执行院长</p></span>
+    </div>
+    <div class="item spe2"></div>
+    <div class="item item_">
+        <span class="cell-item spe3 helf-line"><p>研发中心</p></span>
+        <span class="cell-item spe4 helf-line"><p>管理中心</p></span>
+        <span class="cell-item spe5 helf-line"><p>双创中心</p></span>
+    </div>
+    <div class="item item_ spe6">
+        <span class="cell-item spe3"></span>
+    </div>
+    <div class="item item_">
+        <span class="cell-item helf-line"><p>自助研发</p></span>
+        <span class="cell-item helf-line"><p>联合研发</p></span>
+        <span class="cell-item helf-line">
+            <p>综合办公室</p>
+            <p>财务资产部</p>
+            <p>科技合作部</p>
+        </span>
+        <span class="cell-item helf-line"><p>中科数据公司</p></span>
+    </div>
+</div>
+
+<style>
+    .echat .item {
+        height: 42px;
+        text-align: center;
+        position: relative;
+    }
+    .echat .item .cell-item {
+        display: inline-block;
+        width: 180px;
+        line-height: 18px;
+        padding: 11px 0;
+        color: #128CEE;
+        font-size: 14px;
+        background: #D1E2F5;
+        border: 1px solid #128CEE;
+        border-radius: 8px;
+        position: relative;
+    }
+    .echat .item .cell-item.line::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 42px;
+        background: #128CEE;
+        position: absolute;
+        top: 41px;
+        left: 50%;
+    }
+    .echat .item .cell-item.helf-line::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 21px;
+        background: #128CEE;
+        position: absolute;
+        top: 41px;
+        left: 50%;
+    }
+    .echat .item .cell-item.spe1 {
+        margin-left: 420px;
+    }
+    .echat .item .cell-item.spe1::after {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 1px;
+        background: #128CEE;
+        position: absolute;
+        left: -120px;
+        top: 21px;
+    }
+    .echat .item.spe2::after {
+        content: "";
+        display: block;
+        width: 520px;
+        height: 1px;
+        background: #128CEE;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        margin-left: -200px;
+    }
+    .echat .item.item_{
+        /* margin-top: 42px; */
+    }
+    .echat .item.item_ .cell-item{
+        width: 140px;
+        line-height: 18px;
+        padding: 11px 0;
+    }
+    .echat .item.item_ .cell-item.helf-line::before{
+        content: "";
+        display: block;
+        width: 1px;
+        height: 21px;
+        background: #128CEE;
+        position: absolute;
+        left: 50%;
+        bottom: 41px;
+    }
+    .echat .item.item_ .cell-item.spe3 {
+        position: absolute;
+        left: 329px;
+    }
+    .echat .item.item_ .cell-item.spe4 {
+        position: absolute;
+        left: 650px;
+    }
+    .echat .item.item_ .cell-item.spe5 {
+        position: absolute;
+        left: 848px;
+    }
+    .echat .item.item_.spe6 {
+        visibility: hidden;
+    }
+    .echat .item.item_.spe6 .spe3::after {
+        visibility: visible;
+        content: "";
+        display: block;
+        width: 160px;
+        height: 1px;
+        background: #128CEE;
+        position: absolute;
+        top: 20px;
+        left: -10px;
+    }
+
+</style>

@@ -1,0 +1,156 @@
+<!-- 入孵申请 -->
+<script src="js/layer.min.js"></script>
+<div class="apply">
+  <div class="container">
+    <ul class="clearfix">
+      <li class="item item1">
+        <span>企业名称</span>
+        <input
+          type="text"
+          placeholder="请输入2~20个字"
+          maxlength="20"
+          minlength="2"
+          id="name"
+          autocomplete="off"
+        />
+        <span class="tips"></span>
+      </li>
+      <li class="item item2" onclick="showYears(this)">
+        <p>选择成立年份</p>
+        <ul id="yearsList" data-setTime="">
+          <li onclick="choose(this)">未成立</li>
+        </ul>
+      </li>
+      <li class="item">
+        <span>姓名</span>
+        <input
+          type="text"
+          placeholder="请输入2~6个字"
+          id="contactName"
+          autocomplete="off"
+          maxlength="6"
+          minlength="2"
+        />
+        <span class="tips"></span>
+      </li>
+      <li class="item">
+        <span>联系方式</span>
+        <input
+          type="text"
+          placeholder="请输入"
+          id="contactPhone"
+          autocomplete="off"
+        />
+        <span class="tips"></span>
+      </li>
+      <li class="item item3">
+        <textarea
+          class="form-control"
+          placeholder="请简单描述主营业务,不超过200个字"
+          maxlength="200"
+          id="coreBusiness"
+          autocomplete="off"
+        ></textarea>
+        <span class="tips"></span>
+      </li>
+      <li class="item item4">
+        <button onclick="application()">立即申请</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  $(function (e) {
+    getNowYears();
+    $("#name").on("keyup", function () {
+      var regexp = /^[\u4e00-\u9fa5]{2,20}$/;
+      var msg = "2~20个字";
+      validate(this, regexp, msg);
+    });
+    $("#contactName").on("keyup", function () {
+      var regexp = /^[\u4e00-\u9fa5]{2,6}$/;
+      var msg = "2~6个字";
+      validate(this, regexp, msg);
+    });
+    $("#coreBusiness").on("keyup", function () {
+      var regexp = /^.{0,200}$/;
+      var msg = "不超过200个字";
+      validate(this, regexp, msg);
+    });
+  });
+  function showYears(obj) {
+    $(obj).find("ul").slideToggle();
+    $(obj).find("p").toggleClass("showUp");
+    event.stopPropagation();
+  }
+  function choose(obj) {
+    var year = $(obj).text();
+    $("#yearsList").siblings("p").text(year);
+    if (year == "未成立") {
+      $("#yearsList").attr("data-setTime", "");
+    } else {
+      $("#yearsList").attr("data-setTime", year);
+    }
+  }
+  //获取当前年份
+  function getNowYears() {
+    var myDate = new Date();
+    var tYear = myDate.getFullYear();
+    $("#yearsList").append(
+      '<li onclick="choose(this)">' +
+        tYear +
+        "</li>" +
+        '<li onclick="choose(this)">' +
+        (tYear - 1) +
+        "</li>" +
+        '<li onclick="choose(this)">' +
+        (tYear - 2) +
+        "</li>"
+    );
+  }
+  function application() {
+    var time = $("#yearsList").siblings("p").text();
+    if (time === "选择成立年份") {
+      layer.msg("提交申请失败，请选择成立年份！",{time: 3000});
+    } else {
+      var hero = {
+        name: $("#name").val(),
+        setTime: $("#yearsList").attr("data-setTime"),
+        coreBusiness: $("#coreBusiness").val(),
+        contactName: $("#contactName").val(),
+        contactPhone: $("#contactPhone").val(),
+      };
+
+      $.ajax({
+        url: host + "/api/business/company/commit",
+        type: "post",
+        data: hero,
+        success: function (res) {
+          if (res.code == 200) {
+            $("#name").val("");
+            $("#yearsList").siblings("p").text("选择成立年份");
+            $("#yearsList").attr("data-setTime", "");
+            $("#coreBusiness").val("");
+            $("#contactName").val("");
+            $("#contactPhone").val("");
+            layer.msg("提交成功！我们将在1~3个工作日内联系您。如有需要可联系0793-8161559",{time: 3000});
+          } else {
+            layer.msg(res.message || "提交申请失败",{time: 3000});
+          }
+        },
+        error: function () {
+          layer.msg("提交申请失败",{time: 3000});
+        },
+      });
+    }
+  }
+  //正则校验
+  function validate(obj, regexp, msg) {
+    var strValue = $(obj).val();
+    if (!regexp.test(strValue)) {
+      $(obj).siblings(".tips").text(msg);
+    } else {
+      $(obj).siblings(".tips").text("");
+    }
+  }
+</script>

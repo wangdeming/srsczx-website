@@ -1,0 +1,70 @@
+<!-- 弹框 -->
+<!-- <script src="js/laydate.js"></script> -->
+
+<!-- 填写信息 -->
+<form id="resume" action="">
+    <div class="bomb-msg bomb" style="display: none">
+        <div class="top">
+            <h1 class="title">
+                <span id="post">留言</span>
+            </h1>
+            <div class="close" id="closeMsg"></div>
+        </div>
+        <div class="content" style="padding: 0 60px 50px 40px;">
+            <div class="input_line clearfix">
+                <span class="fl" style="font-size: 16px;">如需帮助，请描述您的问题，我们将尽快与您联系。</span>
+            </div>
+            <div class="input_line clearfix identifier">
+                <span class="text fl">姓名<em class="star">*</em></span>
+                <input id="nameMsg" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="input_line clearfix identifier">
+                <span class="text fl">公司<em class="star">*</em></span>
+                <input id="companyMsg" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="input_line clearfix identifier" style="margin-top: 20px">
+                <span class="text fl">留言内容<em class="star">*</em></span>
+                <textarea class="fl" name="" id="contentMsg" cols="30" rows="10" placeholder="为了更好的解决您的问题，请尽可能详细的描述。"></textarea>
+            </div>
+            <div class="input_line clearfix identifier">
+                <span class="text fl">联系电话<em class="star">*</em></span>
+                <input id="phoneMsg" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="btn_line">
+                <button class="btn" id="sendResumeMsg">提交留言</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- 提交成功 -->
+<div class="bomb success-bomb success-msg" style="display: none">
+    <div class="close closeResume"></div>
+    <div class="content">
+        <span class="icon"></span>
+        <p class="suc-tip">提交成功</p>
+        <!-- <p class="word-tip">我们将尽快处理，近期请留意您的手机或邮箱</p> -->
+        <p class="timeOut" id="timeOutMsg">3s</p>
+    </div>
+</div>
+
+<!-- 遮罩 -->
+<div class="mask mask-msg" style="display: none"></div>
+
+<script>
+    var timerMsg = null
+
+    $('#closeMsg').on('click', function(){
+        $('.bomb').hide()
+        $('.mask').hide()
+        $(".identifier input").val('')
+        $(".identifier textarea").val('')
+        clearInterval(timerMsg)
+    })
+    
+    $('.closeResume').on('click', function(){
+        $('.success-bomb').hide()
+        $('.mask').hide()
+        clearInterval(timerMsg)
+    })
+</script>

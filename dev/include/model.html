@@ -1,0 +1,117 @@
+<!-- 弹框 -->
+<script src="js/laydate.js"></script>
+<style>
+    .layui-laydate .layui-this {
+        background-color: #128CEE!important;
+        color: #fff!important;
+    }
+    .layui-laydate-main{
+        width: 358px;
+    }
+    .layui-laydate-content td, .layui-laydate-content th{
+        width: 50px;
+        padding: 12px;
+    }
+    .laydate-footer-btns span:hover{
+        color: #128cee;
+    }
+</style>
+<!-- 填写信息 -->
+<form id="resume"  action="">
+    <div class="bomb bomb-firm" style="display: none">
+        <div class="top">
+            <h1 class="title">
+                <span id="post">企业入驻</span>
+            </h1>
+            <div class="close"></div>
+        </div>
+        <div class="content" style="padding: 0 50px 50px 40px;">
+            <div class="input_line clearfix">
+                <span class="text fl">企业名称<em class="star">*</em></span>
+                <input id="name" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="input_line clearfix">
+                <span class="text fl">成立时间<em class="star">*</em></span>
+                <input id="setTime" class="input fl" type="text" placeholder="请选择">
+                <div class="arraw" id="arraw"></div>
+            </div>
+            <div class="input_line clearfix">
+                <span class="text fl">企业人数<em class="star">*</em></span>
+                <input id="empNum" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="input_line clearfix" style="margin-top: 20px">
+                <span class="text fl">主营业务<em class="star">*</em></span>
+                <textarea class="fl" name="" id="coreBusiness" cols="30" rows="10" placeholder="请填写"></textarea>
+            </div>
+            <div class="input_line clearfix">
+                <span class="text fl">联系人姓名<em class="star">*</em></span>
+                <input id="contactName" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="input_line clearfix">
+                <span class="text fl">联系电话<em class="star">*</em></span>
+                <input id="contactPhone" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="input_line clearfix">
+                <span class="text fl">电子邮箱<em class="star">*</em></span>
+                <input id="email" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="input_line clearfix" style="margin-top: 20px">
+                <span class="text fl">备注信息</span>
+                <textarea class="fl" name="" id="remark" cols="30" rows="10" placeholder="请填写"></textarea>
+            </div>
+            <div class="btn_line">
+                <button class="btn" id="sendResume">提交</button>
+                <button class="btn cancel" style="margin-left: 14px;background: #9b9b9b;">取消</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- 提交成功 -->
+<div class="bomb success-bomb success-firm" style="display: none">
+    <div class="close"></div>
+    <div class="content">
+        <span class="icon"></span>
+        <p class="suc-tip">提交成功</p>
+        <p class="word-tip">我们将尽快处理，近期请留意您的手机或邮箱</p>
+        <p class="timeOut" id="timeOut">3s</p>
+    </div>
+</div>
+
+<!-- 遮罩 -->
+<div class="mask mask-firm" style="display: none"></div>
+<script src="js/model.js"></script>
+<script>
+    var timer = null
+    laydate.render({
+        elem: "#setTime",
+        format: 'yyyy-MM-dd',
+        // type: 'month',
+        done: function() {
+            $('#arraw').removeClass('active')
+        }
+    })
+
+    $('.close').on('click', function(){
+        $('.bomb').hide()
+        $('.mask').hide()
+        $("#resume input").val('')
+        $("#resume textarea").val('')
+        clearInterval(timer)
+    })
+
+    $('.cancel').on('click', function(){
+        if(event.preventDefault) event.preventDefault();
+        else event.returnValue = false; 
+
+        $('.bomb').hide()
+        $('.mask').hide()
+        $("#resume input").val('')
+        $("#resume textarea").val('')
+        clearInterval(timer)
+    })
+
+    $('#setTime').on('click',function() {
+        $('#arraw').addClass('active')
+    })
+</script>

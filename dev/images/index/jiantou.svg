@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="7px" viewBox="0 0 13 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>jiantou</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-1548.000000, -371.000000)">
+            <text id="更多" font-family="MicrosoftYaHeiUI, Microsoft YaHei UI" font-size="14" font-weight="normal" letter-spacing="1" fill="#999999">
+                <tspan x="1514" y="377">更多</tspan>
+            </text>
+            <polygon id="more_-gray" fill="#CCCCCC" points="1554.05111 371 1556.45201 371 1561 374.48537 1556.45201 378 1554.05111 378 1557.74506 375.127033 1548 375.127033 1548 373.872967 1557.74506 373.872967"></polygon>
+        </g>
+    </g>
+</svg>

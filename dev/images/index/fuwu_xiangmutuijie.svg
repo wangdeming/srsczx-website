@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="129px" height="129px" viewBox="0 0 129 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>fuwu_xiangmutuijie</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M64.5,129 C28.8776336,129 0,100.122366 0,64.5 C0,28.8776336 28.8776336,0 64.5,0 C100.122366,0 129,28.8776336 129,64.5 C129,100.122366 100.122366,129 64.5,129 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="129" height="129" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-896.000000, -972.000000)" fill-rule="nonzero">
+            <g id="Group-15" transform="translate(896.000000, 972.000000)">
+                <g id="Group-34">
+                    <use id="Combined-Shape" stroke="#0274EB" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,4" xlink:href="#path-1"></use>
+                    <g id="重点项目推介-(1)" transform="translate(43.000000, 43.000000)">
+                        <path d="M0,39.3159101 L24.7903333,44 L24.7903333,0 L0,4.68408988 L0,39.3159101 Z M9.35,19.1215039 L12.1055,14.2430078 L14.8646667,19.1215039 L20.4765,20.1632279 L16.5641667,24.2219166 L17.27,29.740486 L12.0908333,27.3819349 L6.91166665,29.740486 L7.6175,24.2219166 L3.70333335,20.1632279 L9.35,19.1215039 Z" id="Shape" fill="#0274EB"></path>
+                        <polygon id="Path" fill="#1EA379" points="44 5.69463549 44 38.25768 26.8748333 38.25768 26.8748333 34.4245759 40.1848333 34.4245759 40.1848333 32.5795507 26.8748333 32.5795507 26.8748333 29.6597891 40.1848333 29.6597891 40.1848333 27.8147639 26.8748333 27.8147639 26.8748333 24.8619899 40.1848333 24.8619899 40.1848333 23.0187987 26.8748333 23.0187987 26.8748333 20.0660248 40.1848333 20.0660248 40.1848333 18.2246676 26.8748333 18.2246676 26.8748333 15.2718936 40.1848333 15.2718936 40.1848333 13.4287024 26.8748333 13.4287024 26.8748333 10.4264099 40.1848333 10.4264099 40.1848333 8.58321871 26.8748333 8.58321871 26.8748333 5.69463549"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

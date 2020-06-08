@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('meta.html')
+    <title>人才招聘详情</title>
+    <link rel="stylesheet" href="css/newsInfo.css">
+</head>
+<body>
+    <div id="wrapper">
+        @@include('header.html',{"rczp": "active"})
+        <section id="news-detail">
+            <div class="guide"><a id="details-title" href="./recruitment.html">人才招聘</a> > 详情</div>
+            <div class="content" id="detail">
+            </div>
+
+            <div class="content" id="new-content" style="min-height: 400px;">
+                <div id="textas"></div>
+            </div>
+        </section>
+        @@include('footer.html')
+    </div>
+</body>
+<script type="text/javascript" src="js/recruitmentDetail.js"></script>
+</html>

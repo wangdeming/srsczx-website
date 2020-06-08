@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="129px" height="129px" viewBox="0 0 129 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>fuwu_jichusheshi</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M64.5,129 C28.8776336,129 0,100.122366 0,64.5 C0,28.8776336 28.8776336,0 64.5,0 C100.122366,0 129,28.8776336 129,64.5 C129,100.122366 100.122366,129 64.5,129 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="129" height="129" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-896.000000, -1196.000000)" fill-rule="nonzero">
+            <g id="Group-10" transform="translate(896.000000, 1196.000000)">
+                <g id="Group-38">
+                    <use id="Combined-Shape" stroke="#0274EB" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,4" xlink:href="#path-1"></use>
+                    <g id="重大基础设施" transform="translate(47.000000, 43.000000)">
+                        <path d="M30.8950617,37.4 L35.308642,37.4 L35.308642,44 L-5.32907052e-14,44 L-5.32907052e-14,37.4 L4.41358024,37.4 L4.41358024,-1.42108547e-14 L30.8950617,-1.42108547e-14 L30.8950617,37.4 Z M26.4814815,30.8 L26.4814815,26.4 L8.82716052,26.4 L8.82716052,30.8 L26.4814815,30.8 Z M26.4814815,22 L26.4814815,17.6 L8.82716052,17.6 L8.82716052,22 L26.4814815,22 Z M26.4814815,13.2 L26.4814815,8.79999998 L8.82716052,8.79999998 L8.82716052,13.2 L26.4814815,13.2 Z" id="Combined-Shape" fill="#0274EB"></path>
+                        <rect id="Rectangle" fill="#1EA379" x="0" y="37" width="36" height="7"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

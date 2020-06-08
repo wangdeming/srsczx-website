@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('meta.html')
+        <title>招商政策</title>
+        <link rel="stylesheet" href="css/policy.css" />
+        <link rel="stylesheet" type="text/css" href="css/zxf_page.css"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            @@include('header.html',{"policy": "active"})
+
+            <article class="container">
+                <div class="policy_header">
+                    <div class="header_nav">
+                        <div onclick="clickType('')" class="nav_item">全部</div>
+                        <div onclick="clickType(1)" class="nav_item">国家级</div>
+                        <div onclick="clickType(2)" class="nav_item">省级</div>
+                        <div onclick="clickType(3)" class="nav_item">市级</div>
+                        <div onclick="clickType(4)" class="nav_item">区县级</div>
+                    </div>
+                    <div class="search_div">
+                        <input id="searchInput" autocomplete="off" placeholder="输入关键词搜索相关政策">
+                        <a onclick="searchPolicy()">搜索</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div id="content">
+                        <ul id="policy" class="list">
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 公用返回顶部 -->
+            <div id="goTop"></div>
+
+            @@include('footer.html')
+        </div>
+        <script type="text/javascript" src="js/zxf_page.js"></script>
+        <script type="text/javascript" src="js/policy.js"></script>
+    </body>
+</html>

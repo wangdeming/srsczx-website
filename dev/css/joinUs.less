@@ -1,0 +1,405 @@
+@import 'var.less';
+
+#recruitment{
+    .bg{
+        height: 420px;
+        position: relative;
+        background: url(../images/us_banner.svg) no-repeat center;
+        background-size: cover;
+        .menu{
+            width: 100%;
+            background:  #328CD7;
+            position: absolute;
+            top: 372px;
+            left: 0;
+            z-index: 10;
+            font-size: 14px;
+            #nav{
+                width: 1200px;
+                position: relative;
+                margin: 0 auto;
+                zoom: 1;
+                li{
+                    width: 50%;
+                    height: 48px;
+                    float: left;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 48px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+                li:hover{
+                    background: rgba(255, 255, 255, 0.31);
+                }
+                .active {
+                    background: rgba(255, 255, 255, 0.31);
+                }
+            }
+        }
+    }
+    .nav-tabs{
+        margin-top: 60px;
+        .active{
+            a{
+                font-size: 16px;
+                color: #40A6F9;
+                letter-spacing: 0;
+                border: none;
+                border-bottom: 2px solid #40a6f9;
+                cursor: default;
+            }
+            a:focus, a:hover{
+                font-size: 16px;
+                color: #40A6F9;
+                letter-spacing: 0;
+                border: none;
+                border-bottom: 2px solid #40a6f9;
+                cursor: default;
+            }
+        }
+        .active:hover{
+            background: #fff;
+            color: #999;
+        }
+    }
+    article {
+        display: none;
+    }
+    .aaa {
+        display: block;
+    }
+}
+.container{
+    width: 1200px;
+    margin: 20px auto;
+    #myTab {
+        list-style-type: none;
+        border-bottom: 1px solid #ccc;
+        height: 35px;
+        margin-top: 50px;
+        li {
+            padding: 0 10px;
+            height: 35px;
+            background: #fff;
+            float: left;
+            color: #666;
+            text-align: center;
+            line-height: 35px;
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+            font-weight: normal;
+            transition: 0.5s;
+            position: relative;
+            margin-left: 40px;
+        }
+        li:first-child {
+            margin-left: 0;
+        }
+        li.active, li:hover{
+            color: #40A6F9;
+        }
+        li.active::after{
+            display: block;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+            border-bottom: 2px solid #40A6F9;
+            bottom: -1px;
+            left: 0;
+        }
+    }
+    #myTabContent{
+        margin-bottom: 70px;
+        // 折叠面板
+        .folding{
+            border-bottom: 1px dashed #ccc;
+            .v{
+                float:right;
+                width:24px;
+                height:24px;
+                overflow:hidden;
+                background:url(../images/us_unfold.svg) no-repeat;
+                display:inline-block;
+                margin-top:-5px;
+                margin-bottom:-5px;
+            }
+            .v:hover{
+                background:url(../images/us_unfoldl.svg) no-repeat;
+            }
+            .v01{
+                background-position:0 0;
+            }
+            .v02{
+                background-position:0 -16px;
+                background:url(../images/us_shrink.svg) no-repeat;
+            }
+            .v02:hover{
+                background:url(../images/us_shrinkl.svg) no-repeat;
+            }
+            .vtitle{
+                font-size:17px;
+                padding: 40px 0 20px 0;
+                cursor: pointer;
+                color: #333;
+                font-weight: 600;
+                .number{
+                    font-size: 16px;
+                    color: #333333;
+                    font-weight: normal;
+                    position: absolute;
+                    right: 50px;
+                }
+            }
+            .vtitle em{
+                margin:0;
+            }
+            .vcon{
+                font-size: 14px;
+                color: #333;
+                line-height: 24px;
+                padding: 4px 0 0 16px;
+                background: #F8F9FA;
+                .item{
+                    margin: 12px 0;
+                    h5{
+                        margin: 8px;
+                    }
+                }
+                button{
+                    margin: 18px 0 30px 0;
+                    border: none;
+                    color: #fff;
+                    background-image: linear-gradient(-90deg,#00a0fe 7%,#0b62ff 100%);
+                    border-radius: 2px;
+                }
+                .pre-font{
+                    font-family: 'Microsoft YaHei',tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+                }
+            }
+        }
+        .list {
+            display: block;
+        }
+    }
+}
+.content{
+    #header{
+        width: 1200px;
+        margin: 20px auto;
+        #nav {
+            list-style-type: none;
+        }
+    }
+}
+
+// 员工福利
+#benefits{
+    .bg{
+        height: 420px;
+        position: relative;
+        background: url(../images/us_banner.svg) no-repeat center;
+        background-size: cover;
+        .menu{
+            width: 100%;
+            background:  #328CD7;
+            position: absolute;
+            top: 372px;
+            left: 0;
+            z-index: 10;
+            font-size: 14px;
+            #nav{
+                width: 1200px;
+                position: relative;
+                margin: 0 auto;
+                zoom: 1;
+                li{
+                    width: 50%;
+                    height: 48px;
+                    float: left;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 48px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    transition: 0.5s;
+                }
+                .active {
+                    background: rgba(255, 255, 255, 0.31);
+                }
+            }
+        }
+    }
+    .container{
+        ul{
+            display: flex;
+            flex-flow: wrap;
+            margin: 80px 0 50px 0;
+            li{
+                width: 25%;
+                text-align: center;
+                margin-bottom: 50px;
+                h5{
+                    font-size: 16px;
+                    color: #333333;
+                    margin-top: 28px;
+                }
+                p{
+                    font-size: 14px;
+                    color: #666666;
+                    line-height: 24px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+// 联系我们
+#header-color{
+    .header{
+        background: rgba(19,29,52,1);
+    }
+}
+#contact-us{
+    width: 1200px;
+    height: 360px;
+    margin: 40px auto 40px;
+    #container{
+        width: 646px;
+        height: 359px;
+        float: left;
+        box-shadow: @boxShadow;
+    }
+    .list{
+        width: 500px;
+        height: 359px;
+        float: right;
+        position: relative;
+        .company{
+            font-family: MicrosoftYaHeiUI;
+            font-size: 24px;
+            color: #0274EB;
+            position: absolute;
+            top: 84px;
+            left: 0;
+        }
+        .company_code{
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            top: 40px;
+            right: 0;
+        }
+        ul{
+            position: absolute;
+            top: 160px;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            li{
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                img{
+                    float: left;
+                    margin-top: 10px;
+                }
+                p{
+                    font-family: PingFangSC-Regular;
+                    font-size: 20px;
+                    color: #0274EB;
+                    float: left;
+                    margin-left: 10px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+.custom-content-marker{
+    position: relative;
+    width: 25px;
+    height: 34px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .close-btn {
+        position: absolute;
+        top: -6px;
+        right: -8px;
+        width: 15px;
+        height: 15px;
+        font-size: 12px;
+        background: #ccc;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        line-height: 15px;
+        box-shadow: -1px 1px 1px rgba(10, 10, 10, .2);
+        :hover{
+            background: #666;
+        }
+    }
+}
+
+// 员工风采
+#staff-presence{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 110px;
+    .list{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        .item{
+            position: relative;
+            margin-bottom: 20px;
+            span{
+                font-size: 16px;
+                color: #fff;
+            }
+            img{
+                height: 300px;
+                width: 100%;
+                object-fit: cover;
+            }
+            .scalePic {
+                transition: all 0.5s linear;
+            }
+            .scalePic:hover{
+                transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+            }
+            .title{
+                position: absolute;
+                bottom: 16px;
+                left: 10px;
+            }
+            .date{
+                position: absolute;
+                bottom: 16px;
+                right: 10px;
+            }
+        }
+        .item:nth-of-type(4n+1) .img-size,.item:nth-of-type(4n+4) .img-size{
+            width: 650px;
+            overflow: hidden;
+        }
+        .item:nth-of-type(4n+2) .img-size,.item:nth-of-type(4n+3) .img-size{
+            width: 530px;
+            overflow: hidden;
+        }
+        .item-three{
+            background: #40A6F9;
+            width: 530px;
+            .slogan{
+                width: 212px !important;
+                margin: 0 159px;
+                filter: none;
+            }
+        }
+    }
+}

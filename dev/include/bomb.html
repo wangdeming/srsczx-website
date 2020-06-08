@@ -1,0 +1,123 @@
+<!-- 弹框 -->
+<script src="js/laydate.js"></script>
+<style>
+    .layui-laydate .layui-this {
+        background-color: #128CEE!important;
+        color: #fff!important;
+    }
+    .layui-laydate-main{
+        width: 360px;
+    }
+    .layui-laydate-content td, .layui-laydate-content th{
+        width: 50px;
+        padding: 12px;
+    }
+    .laydate-footer-btns span:hover{
+        color: #128cee;
+    }
+</style>
+<!-- 填写信息 -->
+<form id="resume" action="">
+    <input id="jobId" type="hidden" value="">
+    <div class="bomb bomb-resume" style="display: none">
+        <div class="top">
+            <h1 class="title">
+                <span id="jobName"></span>
+            </h1>
+            <div class="close" id="closeBomb"></div>
+        </div>
+        <div class="content">
+            <div class="input_line clearfix identifier">
+                <span class="text fl">姓名<em class="star">*</em></span>
+                <input id="name" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="input_line clearfix">
+                <span class="text fl">性别<em class="star">*</em></span>
+                <div class="radio fl">
+                    <div class="box fl">
+                        <input id="man" name="sex" type="radio" value="1" checked>
+                        <label for="man"></label>
+                        <span>男</span>
+                    </div>
+                    <div class="box fl">
+                        <input id="women" name="sex" type="radio" value="2">
+                        <label for="women"></label>
+                        <span>女</span>
+                    </div>
+                </div>
+            </div>
+            <div class="input_line clearfix identifier">
+                <span class="text fl">出生年月<em class="star">*</em></span>
+                <input id="birthday" class="input fl" type="text" placeholder="请选择">
+                <div id="arraw" class="arraw"></div>
+            </div>
+            <div class="input_line clearfix identifier">
+                <span class="text fl">联系电话<em class="star">*</em></span>
+                <input id="phone" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="input_line clearfix identifier">
+                <span class="text fl">电子邮箱<em class="star">*</em></span>
+                <input id="email" class="input fl" type="text" placeholder="请填写">
+            </div>
+            <div class="input_line identifier">
+                <div class="clearfix">
+                    <span class="text fl">简历附件<em class="star">*</em></span>
+                    <label for="resumeFile" class="label fl">
+                        上传
+                        <input id="resumeFile" class="input fl" type="file" value="" accept=".doc,.pdf">
+                    </label>
+                    <div class="info fl">
+                        <span id='file' class="pdf">请选择文件</span>
+                        <span id="det" class="det"></span>
+                    </div>
+                </div>
+                <p class="tip">支持.doc、.pdf格式，大小不超过3M的文件</p>
+            </div>
+            <div class="input_line clearfix identifier" style="margin-top: 20px">
+                <span class="text fl">备注信息</span>
+                <textarea class="fl" name="" id="remark" cols="30" rows="10" placeholder="请填写"></textarea>
+            </div>
+            <div class="btn_line">
+                <button class="btn" id="sendResume">立即投递</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- 提交成功 -->
+<div class="bomb success-bomb success-resume" style="display: none">
+    <div class="close closeResume"></div>
+    <div class="content">
+        <span class="icon"></span>
+        <p class="suc-tip">投递成功</p>
+        <p class="word-tip">我们将尽快处理，近期请留意您的手机或邮箱</p>
+        <p class="timeOut" id="timeOutResume">3s</p>
+    </div>
+</div>
+
+<!-- 遮罩 -->
+<div class="mask mask-resume" style="display: none"></div>
+
+<script>
+    var timerRe = null
+
+    laydate.render({
+        elem: "#birthday",
+        format: 'yyyy-MM-dd',
+        // type: 'month',
+    })
+
+    $('#closeBomb').on('click', function(){
+        $('.bomb').hide()
+        $('.mask').hide()
+        $(".identifier input").val('')
+        $(".identifier textarea").val('')
+        $("#man").prop("checked",true)
+        $("#woman").prop("checked",false)
+        fileObj = undefined
+        $("#file").text('请选择文件')
+        $(".info ").css("display","none")
+        clearInterval(timerRe)
+    })
+
+</script>

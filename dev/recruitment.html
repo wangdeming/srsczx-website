@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('meta.html')
+    <title>人才招聘</title>
+    <link rel="stylesheet" href="css/centerIntroduction.css" />
+    <link rel="stylesheet" type="text/css" href="css/zxf_page.css" />
+  </head>
+  <body>
+    <div id="wrapper" class="attract">
+      @@include('header.html',{"rczp": "active"})
+      <section id="recruitment">
+        <div class="recruitment">
+          <ul id="jobs"></ul>
+        </div>
+      </section>
+      <!-- 公用返回顶部 -->
+      <div id="goTop"></div>
+      @@include('footer.html')
+    </div>
+  </body>
+  <script type="text/javascript" src="js/zxf_page.js"></script>
+  <script src="js/recruitment.js"></script>
+</html>

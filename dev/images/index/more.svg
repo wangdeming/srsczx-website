@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="8px" viewBox="0 0 13 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>more_ gray</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.5%" y="-14.8%" width="104.9%" height="129.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.275928442 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="人才招聘" transform="translate(-1500.000000, -1580.000000)" fill="#5993B2">
+            <g id="招聘列表" transform="translate(360.000000, 361.000000)">
+                <g id="Group-4-Copy-5" filter="url(#filter-1)" transform="translate(0.000000, 1050.000000)">
+                    <g id="箭头-(3)-copy-3" transform="translate(1140.000000, 169.000000)">
+                        <polygon id="more_-gray" points="6.00422078 0.0213397129 8.37824675 0.0213397129 12.8753247 3.66894737 8.37824675 7.34717703 6.00422078 7.34717703 9.65681818 4.34047847 0.0208441558 4.34047847 0.0208441558 3.02803828 9.65681818 3.02803828"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,238 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    .policy_header{
+        width: 100%;
+        height: 40px;
+        margin-top: 24px;
+        .header_nav{
+            width: 670px;
+            height: 40px;
+            float: left;
+            display: flex;
+            justify-content: space-between;
+            .nav_item{
+                width: 110px;
+                height: 40px;
+                line-height: 40px;
+                font-family: MicrosoftYaHeiUI;
+                font-size: 18px;
+                color: #666666;
+                text-align: center;
+                cursor: pointer;
+            }
+            .active{
+                color: #FFFFFF !important;
+                position: relative;
+            }
+            .active:before{
+                content: '';
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                background-color: #0274EB !important;
+                transform: skewX(-20deg);
+                z-index: -1;
+            }
+        }
+        .search_div{
+            width: 456px;
+            height: 40px;
+            float: right;
+            input{
+                box-sizing: border-box;
+                width: 389px;
+                height: 40px;
+                border: 1px solid #0274EB;
+                border-radius: 3px;
+                font-size: 14px;
+                float: left;
+                text-indent: 5px;
+            }
+            a{
+                display: inline-block;
+                width: 66px;
+                height: 40px;
+                float: left;
+                background: #0274EB;
+                border-radius: 2px;
+                font-size: 14px;
+                color: #FFFFFF;
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+    }
+    .content{
+        width: 100%;
+        margin-top: 44px;
+        min-height: 370px;
+        .list{
+            width: 1200px;
+            .list_item{
+                width: 100%;
+                height: 200px;
+                margin-bottom: 10px;
+                background: #FFFFFF;
+                box-shadow: -4px 2px 16px 0 rgba(0,0,0,.06);
+                position: relative;
+                .item_time{
+                    width: 64px;
+                    height: 114px;
+                    background: #0274EB;
+                    position: absolute;
+                    top: 24px;
+                    left: 26px;
+                    span{
+                        font-size: 14px;
+                        color: #FFFFFF;
+                        strong{
+                            font-size: 18px;
+                        }
+                    }
+                    span:nth-child(1){
+                        position: absolute;
+                        top: 35px;
+                        right: 5px;
+                    }
+                    span:nth-child(2){
+                        position: absolute;
+                        top: 60px;
+                        right: 5px;
+                    }
+                }
+                .item_title{
+                    font-size: 18px;
+                    color: #333333;
+                    position: absolute;
+                    top: 24px;
+                    left: 134px;
+                    width: 912px;
+                    height: 24px;
+                    line-height: 24px;
+                    overflow: hidden;
+                }
+                .item_content{
+                    font-size: 14px;
+                    color: #999999;
+                    line-height: 24px;
+                    height: 100px;
+                    width: 912px;
+                    position: absolute;
+                    top: 56px;
+                    left: 134px;
+                    overflow: hidden;
+                }
+                .item_info{
+                    font-size: 14px;
+                    height: 18px;
+                    line-height: 18px;
+                    color: #999999;
+                    position: absolute;
+                    bottom: 22px;
+                    left: 134px;
+                    span:nth-child(1){
+                        margin-right: 40px;
+                    }
+                }
+                .detail{
+                    width: 60px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #5993B2;
+                    position: absolute;
+                    bottom: 16px;
+                    right: 34px;
+                }
+            }
+            .list_item:hover{
+                box-shadow: 0px 0px 14px #b0b0b0;
+            }
+        }
+    }
+}
+
+// 新闻资讯详情
+#news-detail{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    // :hover {
+    //     color: #128cee;
+    // }
+    .guide{
+        font-size: 16px;
+        color: #999999;
+    }
+    .content{
+        margin: 50px 30px;
+        .text {
+            a, .nav > li.active > a {
+                color: #145BAC;
+            }
+            p, h1,
+            h2, h3,
+            h4, h5,
+            table, pre{
+                margin: 10px 0;
+                line-height: 1.5;
+            }
+            b, strong {
+                font-weight: 700;
+            }
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            h4 {
+                font-size: 14px;
+            }
+
+            h5 {
+                font-size: 12px;
+            }
+
+            h6 {
+                font-size: 10px;
+            }
+        }
+        .title{
+            font-size: 24px;
+            color: #333333;
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 20px 0;
+            line-height: 40px;
+        }
+        .date{
+            font-size: 15px;
+            color: #999999;
+            letter-spacing: 0.62px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .text{
+            display: flex;
+            border-top: 1px solid #ccc;
+            padding: 30px 80px;
+            .cover{
+                width: 360px;
+                height: 100%;
+                margin-right: 40px;
+            }
+            p{
+                font-size: 14px;
+                color: #333333;
+                // line-height: 24px;
+            }
+        }
+    }
+}
